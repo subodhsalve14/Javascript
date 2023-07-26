@@ -28,10 +28,46 @@ let myObj = {
     age: 22,
 }
 
-const myFunction = function(){
+console.log(heros[0]);
+
+const myFunction = function () {
     console.log("Hello world");
 }
 
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+
+//************  Stack*************//
+
+let myFirstName = "Subodh"
+
+let anotherName = myFirstName
+anotherName = "Subodhsalve14"
+
+console.log(myFirstName);
+console.log(anotherName);
+
+
+//**********  Heap ***************//
+
+let userOne = {
+    email: "subodh@google.com",
+    upi: "123@ybl" ,
+}
+
+let userTwo =userOne
+
+console.log(userTwo);
+
+userTwo.email ="divesh@google.com"
+
+console.log(userOne);
+console.log(userTwo);
+// It will give reference Orignal Copy
