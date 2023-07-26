@@ -21,9 +21,9 @@ let myTimeStamp = Date.now()
 // console.log(Math.floor(Date.now()/1000));
 
 let newDate = new Date()
-console.log(newDate);
-console.log(newDate.getMonth() +1);
-console.log(newDate.getDay());
+// console.log(newDate);
+// console.log(newDate.getMonth() +1);
+// console.log(newDate.getDay());
 
 // `${newDate.getDay()} and the time `
 
@@ -31,4 +31,7 @@ newDate.toLocaleString('default', {
     weekday: "long",  
 })
 
-
+let currentDate =new Date()
+console.log(currentDate.toDateString());//Display Day Month with text, other with Number
+console.log(currentDate.toLocaleString());//Display Local Date with Time
+console.log(currentDate.toLocaleDateString());//Display Local Date 
